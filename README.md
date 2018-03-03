@@ -40,3 +40,6 @@ __Diskussion__: Gerne würde ich govdata benutzen, aber nicht alle Städte sind 
 
 ### Nicht alle Datensätze meiner Stadt sind aufgeführt
 __Grund__: Leider haben ein paar Harvester noch kleine Fehler, die nach und nach behoben werden müssen.   
+
+### Warum hat Hamburg nur 1000 Datensätze
+__Grund__: Mein Scoring läuft auf AWS Lambda um die Kosten gering zu halten. Leider ist dort ein hartes Limit von 300 Sekunden eingebaut. 16.000 Datensätze sich anzuschauen dauert leider etwas länger. Ich habe aber schon angefangen das ganze auf mehrere Lambda Prozesse zu verteilen, aber es ist leider nicht ganz fertig geworden.    
