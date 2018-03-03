@@ -6,7 +6,7 @@ Deshalb fangen wir einfach mal damit an Feedback hier in GH zu sammeln.
 
 ## Wie gebe ich Feedback?
 
-Eröffne ein Github Issue! Schreib was dir auf dem Herzen liegt. 
+Eröffne ein [Github Issue](https://github.com/citycensus/diskussion/issues/new)! Schreib was dir auf dem Herzen liegt. 
 
 Ich habe mal ein paar Labels angelegt. 
 Mal schauen wie sich das entwickelt.
@@ -20,10 +20,9 @@ __Scoring__: Feedback zum Scoring Algorithmus
 ## Bekannte Probleme
 
 ### Formate werden nicht bei allen Städten richtig übernommen
-__Grund__: Die Harvester von offendaten.de schauen sich die verlinkten Resourcen an und nicht die Metadaten der Resource.  
+__Grund__: Die Harvester von offendaten.de schauen sich die verlinkten Resourcen an und nicht die Metadaten der Resource. Das betrifft auch OGC Webservices (WMS, WFS,...) und APIS.  
 __Diskussion__: Ist es besser den verlintken und damit eigentlichen Datensatz zu bewerten oder die Metadaten des Portals.  
 __Problem__: Nicht alle Portale pflegen ihre Metadaten bis ins kleinste Detail.
-
 
 ### Lizenzen
 __Grund__: Wir sammeln eine Liste von verschiedenen Wegen Lizenzen zu bezeichnen. Wir haben für eine Art Lizenz mind 3 verschiedene Schreibweisen gefunden.  
@@ -43,3 +42,4 @@ __Grund__: Leider haben ein paar Harvester noch kleine Fehler, die nach und nach
 
 ### Warum hat Hamburg nur 1000 Datensätze
 __Grund__: Mein Scoring läuft auf AWS Lambda um die Kosten gering zu halten. Leider ist dort ein hartes Limit von 300 Sekunden eingebaut. 16.000 Datensätze sich anzuschauen dauert leider etwas länger. Ich habe aber schon angefangen das ganze auf mehrere Lambda Prozesse zu verteilen, aber es ist leider nicht ganz fertig geworden.    
+
